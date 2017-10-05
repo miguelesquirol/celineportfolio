@@ -1,0 +1,53 @@
+
+	
+
+
+
+<script>
+      var $group = $('.lapresse').colorbox({inline:true, rel:'lapresse', href: function(){
+            return $(this).children();
+      }});
+      $('#lapresse').on('click', function(e){
+            e.preventDefault();
+            $group.eq(0).click();
+      });
+</script>
+
+
+
+
+	<script>
+
+
+
+	
+	
+	
+
+
+
+setTimeout(function() {
+
+  
+setInterval(function hidethen(){
+    var $sample = $("#masterNavHover");
+    if($sample.is(":hover")) {
+       $("#masterNav").css("margin-top", "0px");
+    }
+    else {
+       $("#masterNav").css("margin-top", "-100px");
+    }
+}, 200);
+	
+$(document).ready(function() {
+
+	hidefirst(function () {
+    hidethen();
+});
+  
+ });
+
+}, 1000);
+  
+
+</script>
