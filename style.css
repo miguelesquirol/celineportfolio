@@ -43,6 +43,10 @@ obj3 img {
 .featured-1,
 .featured-2 {}
 
+.featured img {
+    width: 100%;
+}
+
 .featured {
   position: relative;
   overflow: hidden;
