@@ -6,18 +6,28 @@
     ----------------------------------------------------------------- 
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, we included a small hello world application.
+Connect to FTP: lftp ftp://miguelesquirol@miguelesquirol.com
 
-1) Open the hello-world.html file
+Download a directory with lftp, the wonderful command-line FTP and SFTP client, this is what you want:
 
-2) Click on the Preview button to open a live preview pane
+mirror <directory>
 
-3) Make some changes to the file, save, watch the preview, and have fun!
 
-Happy coding!
-The Cloud9 IDE team
+Here’s how you upload recursively:
+
+mirror -R <directory>
+
+To download a file from your FTP server to your workspace, use the pget command.
+
+$ pget file_from_server.txt
+Now I’ll see file_from_server.txt in my workspace.
+
+To upload a file to your FTP server use the put command.
+
+$ put file_from_workspace_file.txt
+And now my file_from_workspace_file.txt is accessible on my FTP server. :muscle
+
 
 
 ## Support & Documentation
